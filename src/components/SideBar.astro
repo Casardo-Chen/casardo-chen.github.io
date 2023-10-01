@@ -12,11 +12,15 @@ const { sideBarActiveItemID } = Astro.props;
       <a href="/">
         <div class="avatar transition ease-in-out hover:scale-[102%] block m-auto">
           <div class="w-[8.5rem]">
-            <Image class="mask mask-circle" aspectRatio="1:1" format="webp" width={300} height={300} src="/profile.jpg" alt="Profile image" />
+            <Image class="mask mask-circle" aspectRatio="1:1" format="webp" width={400} height={400} src="/profile.png" alt="Profile image" />
           </div>
         </div>
       </a>
     </div>
+    <div class="text-3xl font-bold text-center flex " style="align-items: center; justify-content: center;">Meng Chen</div>
+    <div class="text-center text-sm">Pronoun: He/Him</div>
+    <div class="text-center text-sm ">Undergrad @ Univ. of Notre Dame</div>
+    <div class="text-center text-sm mb-6">📮 mchen24 [at] nd [dot] edu </div>
     <SideBarMenu sideBarActiveItemID={sideBarActiveItemID} />
     <SideBarFooter />
   </aside>
