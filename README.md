@@ -1,3 +1,3 @@
-# Meng Chen's personal website built on Astroy
+# Meng Chen's personal website
 
 
