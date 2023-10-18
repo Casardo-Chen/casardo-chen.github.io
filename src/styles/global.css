@@ -22,3 +22,9 @@
     text-decoration: none;
     color: #df0073;
 }
+
+.artwork-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

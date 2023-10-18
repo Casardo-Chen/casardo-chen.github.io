@@ -2,9 +2,10 @@
 const { title, img, desc, url, badge, tags, target = "_blank", venue} = Astro.props;
 import { Image } from "@astrojs/image/components";
 ---
+<!-- class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]" -->
 
 <div
-  class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]"
+  class="rounded-lg bg-base-100 transition ease-in-out"
 >
   <!-- <a href={url} target={target}> -->
     <div class="hero-content flex-col md:flex-row">
