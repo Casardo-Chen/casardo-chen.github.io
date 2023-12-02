@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
+import Tooltip from '../components/Tooltip.astro';
 import { getCollection } from "astro:content";
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
@@ -12,25 +13,44 @@ const last_posts = posts.slice(0, 3);
   <div class="pb-12 mt-5">
     <div class="text-xl py-1"></div>
     <div class="text-5xl font-bold">Hey there 👋 This is Meng.</div>
-    <div class="text-3xl py-3 font-bold">HCI Researcher | Humanist Technologist</div>
+    <div class="text-3xl py-3 font-bold">
+      HCI Researcher | Humanist Technologist
+      <!-- <Tooltip>
+        <span slot="content"> I do because I can - Technologist <br/> I do because I care - Humanist </span>
+        Humanist Technologist
+      </Tooltip> -->
+    </div>
+    
     <div class="py-2">
-      <text class="text-lg">
-        My research focuses on Human-Computer Interaction (HCI) and Cognitive Science. <br/>Recently, I am thinking about how to articulate human intents
-        in a more natural manner. I am thinking in two directions: 
+        <text class="text-lg">
+          My research focuses on <b>system Human-Computer Interaction (HCI)</b> and <b>Cognitive Science</b>.
+          Recently, I focus on <b>intent-level</b> human-computer interaction. 
+          More specifically, I hope to leverage interfaces to improve communication between two black boxes- humans and AI. 
+          <br/>
+          <br/>
+          I address this issue in three directions: 
+        </text>
         <ul>
-          <text class="text-lg">
-            (1) how to translate vague unstructured human intents into structured machine-readable formal language; 
-          </text>
+          <li> 
+            <text class="text-lg">
+              <span class="number-list">1</span> translating open-ended human intents into structured machine-understandable formal language;
+            </text>
+          </li>
+          <li>
+            <text class="text-lg">
+              <span class="number-list">2</span> making the computer accurately and naturally capture human intents;
+            </text>
+          </li>
+          <li>
+            <text class="text-lg">
+              <span class="number-list">3</span> designing and deploying human-in-the-loop systems that support human activity.
+            </text>
+          </li>
         </ul>
-        <ul>
-          <text class="text-lg">
-            (2) how to make the machine understand human intents in a more natural way.
-          </text>
-        </ul>
-      </text>
+        <br/>
       <text class="text-lg">
-        I am studying Computer Science and Philosophy at the <a href="http://nd.edu" class="link" target="_blank">University of Notre Dame</a> where I was advised by <a href="http://toby.li" class="link" target="_blank">Dr. Toby Jia-jun Li</a>.
-        Previously, I interned at <a href="http://creativity.ucsd.edu" class="link" target="_blank">Creativity Lab</a> led by <a href="http://haijunxia.ucsd.edu" class="link" target="_blank">Dr. Haijun Xia</a>.
+        I study Computer Science and Philosophy at the <a href="http://nd.edu" class="link" target="_blank">University of Notre Dame</a> where I was advised by <a href="http://toby.li" class="link" target="_blank">Dr. Toby Jia-jun Li</a>.
+        Previously, I interned at <a href="http://creativity.ucsd.edu" class="link" target="_blank">Creativity Lab</a> led by <a href="https://creativity.ucsd.edu/haijunxia" class="link" target="_blank">Dr. Haijun Xia</a>.
       </text>
     </div>
     <!-- <div class="mt-8">
@@ -47,12 +67,12 @@ const last_posts = posts.slice(0, 3);
 
   <HorizontalCard
     title="Structured Generation and Exploration of Design Space with Large Language Models for Human-AI Co-Creation"
-    img="/publications/Luminate.png"
+    img="/publications/Luminate.jpg"
     desc="Sangho Suh*, Meng Chen*, Bryan Min, Toby Jia-Jun Li, Haijun Xia"
     url="#"
     venue="Arxiv"
     badge="NEW"
-    tags={[["Video","https://www.youtube.com/watch?feature=shared&v=XMSGsq-COhI"],["PDF","https://arxiv.org/abs/2310.12953"],]}
+    tags={[["Demo","https://luminate-research.github.io/"],["Video","https://www.youtube.com/watch?feature=shared&v=XMSGsq-COhI"],["PDF","https://arxiv.org/abs/2310.12953"],]}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
@@ -67,7 +87,7 @@ const last_posts = posts.slice(0, 3);
   <div class="divider my-0"></div>
   <HorizontalCard
     title="An Empirical Study of Developer Behaviors for Validating and Repairing AI-Generated Code"
-    img="/publications/PLATEAU2023.png"
+    img="/publications/PLATEAU23.jpeg"
     desc="Ningzhi Tang*, Meng Chen*, Zheng Ning, Aakash Bansal, Yu Huang, Collin McMillan, Toby Jia-Jun Li"
     url="https://kilthub.cmu.edu/articles/conference_contribution/An_Empirical_Study_of_Developer_Behaviors_for_Validating_and_Repairing_AI-Generated_Code/22223533/1/files/39505942.pdf"
     venue="13th Annual Workshop at the Intersection of PL and HCI (PLATEAU 2023)"
@@ -81,7 +101,7 @@ const last_posts = posts.slice(0, 3);
   <ul>
     <li><strong>Oct 29 - Nov 01, 2023 </strong>
       <br>
-      Travel to San Francisco and participate in UIST 2023.
+      Attended UIST 2023 @ San Francisco, CA, USA.
     </li>
     <li><strong>Jun 05, 2023 </strong>
       <br> Started my summer research internship at UCSD Design Lab.

@@ -1,0 +1,11 @@
+---
+// Import any necessary scripts or styles here
+const { text, content } = Astro.props;
+import './Tooltip.scss';
+---
+<div class="tooltip">
+    <slot>{text}</slot> <!-- Slot for the text to hover over -->
+    <div class="tooltip-content">
+      <slot name="content">{content}</slot> <!-- Slot for the tooltip content -->
+    </div>
+</div>
