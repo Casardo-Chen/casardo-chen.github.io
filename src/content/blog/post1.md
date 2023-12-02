@@ -29,7 +29,7 @@ Even though the task involved the creation and design of new algorithms and tech
 The conventional dichotomy was that hardware was a men’s job as they involved the use of mechanical and electronic components, whereas software implementations were commonly assigned to women due to its perceived straightforward execution of a pre-determined plan (Haigh 2014). This perception changed as people began to recognize the complexity and significance of software development. Software engineering was first formally recognized as an engineering discipline by the ACM president Anthony A. Oettinger's Letter to the ACM Membership in 1966. He said in the letter, “We must recognize ourselves-not necessarily all of us, and not necessarily anyone of us all the time- as members of the engineering profession, be it hardware engineering or software engineering, a profession without artificial and irrelevant boundaries like that between 'scientific' and 'business' applications” (546). The boundary between computer design and implementation, hardware and software blurred. This demand for programmers began to grow in the 1950s with the widespread use of electronic computers and their application in the business world. Estimation suggested that there was a demand for 500,000 more men to write computer instructions in the mid 1960s (Englebart 1965). The pay for programmers also increased by 40 to 50 percent and programming was one of “the country’s highest-paid technological occupations”, which brought public attention to these lucrative opportunities (Bylinsky 1967, 140). 
 
 <div align="center">
-    <img src="/public/blog/computer-recruiting-ads.png" alt="Left: Ensmenger 2015; Middle: 1970; Right: Posted">
+    <img src="/blog/computer-recruiting-ads.png" alt="Left: Ensmenger 2015; Middle: 1970; Right: Posted">
     <br>
     <em>Left: Ensmenger 2015; Middle: 1970; Right: Posted</em>
 </div>
@@ -43,7 +43,7 @@ Although the growing demand for technical requirements elevated the prestige of 
 The Association for Computing Machinery (ACM) was established in 1947, following the Symposium on Large-Scale Digital Calculating Machinery held at Harvard, and has since become one of the most prominent academic computing associations. After Purdue established the very first computer science program in 1962, the number of bachelor computer science programs skyrocketed from 11 in 1964 to 92 in 1968 (153). When considering all similar programs, the number raised from 44 to 151 for bachelor’s, 61 to 137 for master’s, and 35 to 81 for Ph.D. during the same period (153). In March 1968, the ACM Curriculum Committee published its first course recommendations to initiate the institutionalization of computer science programs as an academic discipline. The diagram below exhibits the suggested mathematics and programming course roadmap for computer-science-related programs across the US. 
  
 <div align="center">
-    <img src="/public/blog/course-map.png" alt="157">
+    <img src="/blog/course-map.png" alt="157">
     <br>
     <em>(157)</em>
 </div>
