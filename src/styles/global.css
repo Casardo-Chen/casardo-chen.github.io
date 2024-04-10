@@ -5,8 +5,8 @@
 .link{
     position: relative;
     text-decoration: none;
-    color: #888888;
-    background: linear-gradient(to bottom, transparent 50%, #df0073ff);
+    color: #BF5700;
+    background: linear-gradient(to bottom, transparent 54%, #BF5700);
     background-size: 100% 200%;
     background-position: 0 50%;
     transition: background-position 0.3s ease;
@@ -14,7 +14,7 @@
 
 .link:hover {
     background-position: 0 0;
-    color: #df0073;
+    color: #BF5700;
     /* color: #00FFFF;
     background-color: #FFFF00; */
 }
@@ -22,7 +22,7 @@
 .paper{
     position: relative;
     text-decoration: none;
-    color: #df0073;
+    color: #BF5700;
 }
 
 .artwork-container {
@@ -33,7 +33,7 @@
 
 .number-list{
     font-weight: bold;
-    color: #df0073;
+    color: #BF5700;
     margin-left: 12px;
     margin-right: 5px;
 }
