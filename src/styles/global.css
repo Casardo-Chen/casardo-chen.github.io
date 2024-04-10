@@ -9,14 +9,15 @@
     background: linear-gradient(to bottom, transparent 54%, #BF5700);
     background-size: 100% 200%;
     background-position: 0 50%;
-    transition: background-position 0.3s ease;
+    transition: background-position 0.4s ease;
 }
 
 .link:hover {
     background-position: 0 0;
-    color: #BF5700;
-    /* color: #00FFFF;
-    background-color: #FFFF00; */
+    color: #ffffff;
+    background-color: #BF5700;
+    text-decoration: none;
+    transition: background-color 0.4s ease;
 }
 
 .paper{
