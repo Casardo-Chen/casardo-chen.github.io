@@ -8,7 +8,7 @@ import { Image } from "@astrojs/image/components";
   class="bg-base-100 transition ease-in-out"
 >
   {click ? <a href={url} target={target}>
-    <div class="hero-content flex-col md:flex-row">
+    <div class="flex-col md:flex-row">
       {
         img && (
           <Image
@@ -22,7 +22,7 @@ import { Image } from "@astrojs/image/components";
         )
       }
       <div class="grow w-full">
-        <h1 class="text-xl font-bold">
+        <h1 class="text-2xl font-bold">
           {title}
           {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
         </h1>
