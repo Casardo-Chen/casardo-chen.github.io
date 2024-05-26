@@ -2,21 +2,12 @@
     display: none;
 }
 
-/* .link{
-    position: relative;
-    text-decoration: none;
-    color: #000000;
-    background: linear-gradient(to bottom, 54%, #F7BD03);
-    background-size: 100% 200%;
-    background-position: 0 50%;
-    transition: background-position 0.4s ease;
-} */
 
 .link {
     position: relative;
     text-decoration: none;
     color: #000000;
-    background: linear-gradient(to top, #FFDD00 44%, transparent 30%);
+    background: linear-gradient(to top, #9EB294 40%, transparent 30%);
     background-size: 100% 200%; 
     background-position: 0 50%;
     transition: background-position 0.4s ease;
@@ -25,8 +16,8 @@
 
 .link:hover {
     background-position: 0 0;
-    color: #000000;
-    background-color: #FFDD00;
+    color: #ffffff;
+    background-color: #9EB294;
     text-decoration: none;
     transition: background-color 0.4s ease;
 }
@@ -34,13 +25,13 @@
 .paper{
     position: relative;
     text-decoration: none;
-    color: #f7b203;
+    color: #9EB294;
 }
 
 .paper:hover {
     background-position: 0 0;
-    color: #000000;
-    background-color: #FFDD00;
+    color: #ffffff;
+    background-color: #9EB294;
     text-decoration: none;
     transition: background-color 0.4s ease;
 }
@@ -53,7 +44,12 @@
 
 .number-list{
     font-weight: bold;
-    color: #f7b203;
+    color: #9EB294;
     margin-left: 12px;
     margin-right: 5px;
+    text-indent: 0;
+}
+
+span {
+    display: inline-block
 }

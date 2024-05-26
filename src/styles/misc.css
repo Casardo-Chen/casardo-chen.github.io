@@ -1,0 +1,24 @@
+.contact-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .location-info, .contact-info {
+    padding: 20px;
+    border: 0px solid #ccc; /* Just for visual distinction */
+  }
+  
+  .reach-out-statement {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f8f8f8;
+    border: 0px solid #ccc;
+  }
+  

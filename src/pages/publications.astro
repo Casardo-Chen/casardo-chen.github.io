@@ -3,49 +3,46 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
-<BaseLayout title = "Publications" sideBarActiveItemID="projects">
+<BaseLayout title = "Publications" sideBarActiveItemID="publications">
   <div>
-    <div class="text-3xl w-full font-bold mb-5">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Major Peer-reviewed Conference Papers</div>
   </div>
-
   <HorizontalCard
-    title="Demo Project 1"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="NEW"
+    title="Luminate: Structured Generation and Exploration of Design Space with Large Language Models for Human-AI Co-Creation"
+    img="/publications/Luminate.jpg"
+    desc="Sangho Suh*, Meng Chen*, Bryan Min, Toby Jia-Jun Li, Haijun Xia"
+    venue="Proceedings of the ACM Conference on Human Factors in Computing Systems (CHI 2024)"
+    tags={[["Website","https://luminate-research.github.io/"],["Video","https://www.youtube.com/watch?feature=shared&v=XMSGsq-COhI"],["Paper","https://arxiv.org/pdf/2310.12953.pdf"],]}
   />
   <div class="divider my-0"></div>
   <HorizontalCard
-    title="Demo Project 2"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
+    title="A Bottom-Up End-User Intelligent Assistant Approach to Empower Gig Workers against AI Inequality"
+    img="/publications/CHIWORK2022.png"
+    desc="Toby Jia-Jun Li, Yuwen Lu, Jaylexia Clark, Meng Chen, Victor Cox, Meng Jiang, Yang Yang, Tamara Kay, Danielle Wood, Jay Brockman"
+    venue="2022 Symposium on Human-Computer Interaction for Work (CHIWORK 2022)"
+    tags={[["Video", "https://www.youtube.com/watch?v=8zCOj9G3I_o"], ["Paper","https://arxiv.org/pdf/2204.13842.pdf"]
+    ]}
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-5 mt-10">Projects Header</div>
+    <div class="text-3xl w-full font-bold mb-5">Workshop</div>
   </div>
+  <HorizontalCard
+    title="CodeGRITS: A Research Toolkit for Developer Behavior and Eye Tracking in IDE"
+    desc="Ningzhi Tang*, Junwen An*, Meng Chen, Aakash Bansal, Yu Huang, Collin McMillan, Toby Jia-Jun Li"
+    url="https://kilthub.cmu.edu/articles/conference_contribution/An_Empirical_Study_of_Developer_Behaviors_for_Validating_and_Repairing_AI-Generated_Code/22223533/1/files/39505942.pdf"
+    venue="ICSE-Companion '24: Proceedings of the 2024 IEEE/ACM 46th International Conference on Software Engineering: Companion Proceedings"
+    tags={[["Website","https://codegrits.github.io/CodeGRITS/"], ["Paper","https://codegrits.github.io/CodeGRITS/static/paper.pdf"],
+    ]}
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="An Empirical Study of Developer Behaviors for Validating and Repairing AI-Generated Code"
+    desc="Ningzhi Tang*, Meng Chen*, Zheng Ning, Aakash Bansal, Yu Huang, Collin McMillan, Toby Jia-Jun Li"
+    url="https://kilthub.cmu.edu/articles/conference_contribution/An_Empirical_Study_of_Developer_Behaviors_for_Validating_and_Repairing_AI-Generated_Code/22223533/1/files/39505942.pdf"
+    venue="13th Annual Workshop at the Intersection of PL and HCI (PLATEAU 2023)"
+    tags={[["Paper","https://kilthub.cmu.edu/articles/conference_contribution/An_Empirical_Study_of_Developer_Behaviors_for_Validating_and_Repairing_AI-Generated_Code/22223533"],
+    ]}
+  />
 
-  <HorizontalCard
-    title="Demo Project 3"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-    badge="FOSS"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 4"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
-  <div class="divider my-0"></div>
-  <HorizontalCard
-    title="Demo Project 5"
-    img="/post_img.webp"
-    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    url="#"
-  />
 </BaseLayout>
