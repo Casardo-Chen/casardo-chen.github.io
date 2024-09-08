@@ -14,29 +14,29 @@ const last_posts = posts.slice(0, 3);
     <!-- <div class="text-xl py-1"></div> -->
     <!-- <div class="text-5xl font-bold">Hey there 👋 This is Meng.</div> -->
     <div class="text-3xl py-3 font-bold">
-      HCI Researcher | Humanist Technologist
+      HCI + AI Researcher
     </div>
     
     <div class="py-2">
         <text class="text-lg">
-          My research is focused on <b>Human-Computer Interaction (HCI)</b> and <b>Human-AI Interaction</b>.
-          Specifically, I hope to leverage <b>AI-powered interfaces</b> to achieve accessible communication and effective disambiguation between cognition and computation. 
-          <br/>I am exploring elucidating <b>intents</b> in interactions through three directions: 
+          My research is on <b>Human-Computer Interaction (HCI)</b> and <b>Human-AI Interaction</b>.
+          I design and evaluate tools that support accessible communication and effective disambiguation between cognition and computation in <b>human-AI collaborative work</b>.
+          <br/>I am approaching this goal through three steps: 
         </text>
         <ul>
           <li> 
             <text class="text-lg">
-              <span class="number-list">1</span> translating open-ended human intents into structured machine-understandable formal language;
+              <span class="number-list">1</span> understand the uncertainty and ambiguity in human-AI collaboration;
             </text>
           </li>
           <li>
             <text class="text-lg">
-              <span class="number-list">2</span> making the computer accurately and naturally capture human intents;
+              <span class="number-list">2</span> validate and correct AI-generated contents;
             </text>
           </li>
           <li>
             <text class="text-lg">
-              <span class="number-list">3</span> designing and deploying human-in-the-loop systems that support human activity.
+              <span class="number-list">3</span> build AI-powered interactive systems to support productivity, creativity, and accessibility.
             </text>
           </li>
         </ul>
@@ -70,23 +70,41 @@ const last_posts = posts.slice(0, 3);
   <div>
     <div class="text-3xl w-full font-bold mb-5 mt-10">News</div>
   </div>
-  <ul>
-    <li><strong>May 12 - May 16, 2024 </strong>
+  <ul id="news-list">
+    <li><strong>Oct 13 - 16, 2024 </strong>
+      <br> Served as a student volunteer for UIST 2024 @ Pittsburgh, PA, USA.
+    </li>
+    <li><strong>May 12 - 16, 2024 </strong>
       <br> Attended CHI 2024 @ Honolulu, HI, USA.
     </li>
     <li><strong>Mar 14, 2024 </strong>
-      <br> Our Paper <a class="paper" >Luminate: Structured Generation and Exploration of Design Space with Large Language Models for Human-AI Co-Creation</a> has been accepted to CHI 2024!
+      <br> Our Paper <a class="paper" target="_blank" href="https://luminate-research.github.io/">Luminate: Structured Generation and Exploration of Design Space with Large Language Models for Human-AI Co-Creation</a> has been accepted to CHI 2024!
     </li>
-    <li><strong>Oct 29 - Nov 01, 2023 </strong>
+    <li class="extra-news" style="display: none;"><strong>Oct 29 - Nov 01, 2023 </strong>
       <br> Attended UIST 2023 @ San Francisco, CA, USA.
     </li>
-    <li><strong>Jun 05, 2023 </strong>
+    <li class="extra-news" style="display: none;"><strong>Jun 05, 2023 </strong>
       <br> Started my summer research internship at UCSD Design Lab.
     </li>
-    <li><strong>Feb 13 - 14, 2023 </strong>
-      <br> Presented <a class="paper" >An Empirical Study of Developer Behaviors for Validating and Repairing AI-Generated Code</a> in PLATEAU workshop at CMU!
+    <li class="extra-news" style="display: none;"><strong>Feb 13 - 14, 2023 </strong>
+      <br> Presented <a class="paper" target="_blank" href="https://kilthub.cmu.edu/articles/conference_contribution/An_Empirical_Study_of_Developer_Behaviors_for_Validating_and_Repairing_AI-Generated_Code/22223533">An Empirical Study of Developer Behaviors for Validating and Repairing AI-Generated Code</a> in PLATEAU workshop at CMU!
     </li>
   </ul>
+  <button id="toggle-news" class="mt-5">Show More <span>▼</span></button>
+
+<script>
+  document.getElementById('toggle-news')?.addEventListener('click', function() {
+    const extraNews = document.querySelectorAll('.extra-news');
+    const button = this;
+    const isVisible = extraNews[0].style.display === 'none';
+
+    extraNews.forEach(item => {
+      item.style.display = isVisible ? 'list-item' : 'none';
+    });
+
+    button.innerHTML = isVisible ? 'Show Less ▲' : 'Show More ▼';
+  });
+</script>
 
   <!-- {
     last_posts.map((post) => (

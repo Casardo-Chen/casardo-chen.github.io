@@ -3,21 +3,28 @@
 }
 
 
-.link {
+/* .link {
     position: relative;
     text-decoration: none;
     color: #000000;
-    background: linear-gradient(to top, #ffdd8c 40%, transparent 30%);
+    background: linear-gradient(to top, #d0d2d2 40%, transparent 30%);
     background-size: 100% 200%; 
     background-position: 0 50%;
     transition: background-position 0.4s ease;
+} */
+
+.link {
+    position: relative;
+    color: #233eb9;
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
 
 
 .link:hover {
     background-position: 0 0;
     color: #ffffff;
-    background-color: #800020;
+    background-color: #233eb9;
     text-decoration: none;
     transition: background-color 0.4s ease;
 }
@@ -25,13 +32,13 @@
 .paper{
     position: relative;
     text-decoration: none;
-    color: #800020;
+    color: #233eb9;
 }
 
 .paper:hover {
     background-position: 0 0;
     color: #ffffff;
-    background-color: #800020;
+    background-color: #233eb9;
     text-decoration: none;
     transition: background-color 0.4s ease;
 }
@@ -44,7 +51,7 @@
 
 .number-list{
     font-weight: bold;
-    color: #800020;
+    color: #233eb9;
     margin-left: 12px;
     margin-right: 5px;
     text-indent: 0;
