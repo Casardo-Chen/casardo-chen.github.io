@@ -1,79 +1,54 @@
 ---
-const { title, img, desc, url, badge, tags, target = "_blank", venue, click = false, meng=""} = Astro.props;
+const { title, img, authors, url, badge, tags, target = "_blank", venue, venue_short } = Astro.props;
 import { Image } from "@astrojs/image/components";
+import './HorizontalCard.scss'
 ---
 <!-- class="rounded-lg bg-base-100 hover:shadow-xl transition ease-in-out hover:scale-[102%]" -->
 
 <div
-  class="bg-base-100 transition ease-in-out"
+  class="bg-base-100 transition ease-in-out horizontal-card"
 >
-  {click ? <a href={url} target={target}>
-    <div class="flex-col md:flex-row">
-      {
-        img && (
-          <Image
-            src={img}
-            aspectRatio="16:9"
-            width={750}
-            format="webp"
-            alt={title}
-            class="max-w-full md:max-w-[13rem]"
-          />
-        )
-      }
-      <div class="grow w-full">
-        <h1 class="text-2xl font-bold">
-          {title}
-          {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
-        </h1>
-        <p class="py-1 text-1xl">{desc}</p>
-        <p class="py-1 text-1xl">{venue}</p>
-        <div class="card-actions justify-end">
-          {
-             tags &&
-              tags.map((tag) => (
-                <div class="badge badge-secondary mx-2">
-                  <a href={`${tag[1]}`} target={target}>{tag[0]}</a>
-                  
-                </div>
-              ))
-          }
-        </div>
-      </div>
-    </div>
-  </a>
-  :
   <div class="hero-content flex-col md:flex-row">
       {
-        img && (
-          <Image
-            src={img}
-            aspectRatio="16:9"
-            width={750}
-            format="webp"
-            alt={title}
-            class="max-w-full md:max-w-[13rem]"
-          />
-        )
+          img && (
+          <div class="flex flex-col items-center mr-8">
+            <Image
+              src={img}
+              aspectRatio="16:9"
+              width={750}
+              format="webp"
+              alt={title}
+              class="max-w-full md:max-w-[13rem]"
+            />
+          </div>
+          )
       }
       <div class="grow w-full">
         <h1 class="text-xl font-bold">
           {title}
           {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
         </h1>
-        <p class="py-1 text-1xl">{desc}</p>
-        <p class="py-1 text-1xl">{venue}</p>
-        <div class="card-actions justify-end">
-          {
-             tags &&
-              tags.map((tag) => (
-                <div class="badge badge-secondary mx-2">
-                  <a href={`${tag[1]}`} target={target}>{tag[0]}</a>
-                </div>
-              ))
-          }
-        </div>
+        <div class="py-1 text-1xl">
+          {authors.map((author, index) => (
+              <>{author.includes("Meng Chen") ? <b class="underline">{author}</b> : author}</>
+              <>{index < authors.length - 1 ? ", " : ""}</>
+            ))}
+      </div>
+       
+        <div class="py-1 text-1xl italic">{venue}</p>
+ 
+          <div class="card-actions flex justify-between items-center">
+  {venue_short && <h1 class="text-l font-bold">{venue_short}</h1>}
+  <div class="flex py-1">
+    {tags && tags.map((tag) => (
+      <a href={`${tag[1]}`} target={target} class="horizontal-card-tag">
+          {tag[0]}
+      </a>
+    ))}
+  </div>
+</div>
+
       </div>
     </div>
-  }
+  
 </div>
