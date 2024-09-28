@@ -16,18 +16,21 @@ const { page } = Astro.props;
 <BaseLayout title="Art" sideBarActiveItemID="Arts">
   <div class="mb-5">
     <div class="text-3xl w-full font-bold">Essays</div>
-    <br/>
+    <br />
     <p>
-      I found it fascinating to write about some thoughts and observations on Science, Technology, and Society. I hope you enjoy reading them as much as I enjoyed writing them.
+      I found it fascinating to write about some thoughts and observations on
+      Science, Technology, and Society. I hope you enjoy reading them as much as
+      I enjoyed writing them.
     </p>
   </div>
-
 
   {
     page.data.length === 0 ? (
       <div class="bg-base-200 border-l-4 border-secondary w-full p-4 min-w-full">
         <p class="font-bold">Sorry!</p>
-        <p>There are no article posts to show at the moment. Check back later!</p>
+        <p>
+          There are no article posts to show at the moment. Check back later!
+        </p>
       </div>
     ) : (
       <ul>
