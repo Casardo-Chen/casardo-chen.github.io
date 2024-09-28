@@ -1,6 +1,6 @@
 ---
 title: "Men's Work or Women's Work? How Engineering Brought Masculinity to Programming"
-description: ""
+description: "Meng Chen"
 pubDate: "Apr 30 2023"
 heroImage: "/blog/women-programmer.png"
 ---

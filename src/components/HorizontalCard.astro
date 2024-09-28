@@ -1,5 +1,5 @@
 ---
-const { title, img, authors, url, badge, tags, target = "_blank", venue, venue_short } = Astro.props;
+const { title, img, authors, url, badge, tags, desc, target = "_blank", venue, venue_short } = Astro.props;
 import { Image } from "@astrojs/image/components";
 import './HorizontalCard.scss'
 ---
@@ -29,7 +29,7 @@ import './HorizontalCard.scss'
           {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
         </h1>
         <div class="py-1 text-1xl">
-          {authors.map((author, index) => (
+          {authors && authors.map((author, index) => (
               <>{author.includes("Meng Chen") ? <b class="underline">{author}</b> : author}</>
               <>{index < authors.length - 1 ? ", " : ""}</>
             ))}
