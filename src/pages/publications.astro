@@ -4,9 +4,10 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 ---
 
 <BaseLayout title = "Publications" sideBarActiveItemID="publications">
-  <p>* denotes equal contribution</p>
+  <div class="text-3xl w-full font-bold mb-2">Publications</div>
+  <p class="mb-2">* denotes equal contribution</p>
   <div>
-    <div class="text-3xl w-full font-bold mb-4">Major Peer-reviewed Conference Papers</div>
+    <div class="text-2xl w-full font-bold">Major Peer-reviewed Conference Papers</div>
   </div>
   <HorizontalCard
     title="Developer Behaviors in Validating and Repairing LLM-Generated Code Using IDE and Eye Tracking"
@@ -16,7 +17,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     venue_short="VL/HCC2024"
     tags={[["Paper","https://arxiv.org/abs/2405.16081"],]}
   />
-  <div class="divider my-0"></div>
+  <div class="divider my-0 h-0"></div>
   <HorizontalCard
     title="Luminate: Structured Generation and Exploration of Design Space with Large Language Models for Human-AI Co-Creation"
     img="/publications/Luminate.jpg"
@@ -25,7 +26,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     venue_short="CHI2024"
     tags={[["Website","https://luminate-research.github.io/"],["Video","https://www.youtube.com/watch?feature=shared&v=XMSGsq-COhI"],["Paper","https://arxiv.org/pdf/2310.12953.pdf"],]}
   />
-  <div class="divider my-0"></div>
+  <div class="divider my-0 h-0"></div>
   <HorizontalCard
     title="A Bottom-Up End-User Intelligent Assistant Approach to Empower Gig Workers against AI Inequality"
     img="/publications/CHIWORK2022.png"
@@ -38,7 +39,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
   />
 
   <div>
-    <div class="text-3xl w-full font-bold mb-4">Minor Lightly-Reviewed Papers</div>
+    <div class="text-2xl w-full font-bold mt-2">Minor Lightly-Reviewed Papers</div>
   </div>
   <HorizontalCard
     title="CodeGRITS: A Research Toolkit for Developer Behavior and Eye Tracking in IDE"
@@ -49,7 +50,7 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     tags={[["Website","https://codegrits.github.io/CodeGRITS/"], ["Paper","https://codegrits.github.io/CodeGRITS/static/paper.pdf"],
     ]}
   />
-  <div class="divider my-0"></div>
+  <div class="divider my-0 h-0"></div>
   <HorizontalCard
     title="An Empirical Study of Developer Behaviors for Validating and Repairing AI-Generated Code"
     authors={["Ningzhi Tang*", "Meng Chen*", "Zheng Ning", "Aakash Bansal", "Yu Huang", "Collin McMillan", "Toby Jia-Jun Li"]}
