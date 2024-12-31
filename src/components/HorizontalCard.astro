@@ -24,18 +24,20 @@ import './HorizontalCard.scss'
           )
       }
       <div class="grow w-full">
-        <h1 class="text-xl font-bold">
+        <h1 class="text-lg font-bold">
           {title}
           {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
         </h1>
-        <div class="py-1 text-1xl">
+        <div class="py-1 text-base">
           {authors && authors.map((author, index) => (
               <>{author.includes("Meng Chen") ? <b class="underline">{author}</b> : author}</>
               <>{index < authors.length - 1 ? ", " : ""}</>
             ))}
       </div>
        
-        <div class="py-1 text-1xl italic">{venue}</p>
+        <div class="py-1 text-sm italic"
+          >{venue}
+        </div>
  
           <div class="card-actions flex justify-between items-center">
   {venue_short && <h1 class="text-l font-bold">{venue_short}</h1>}
