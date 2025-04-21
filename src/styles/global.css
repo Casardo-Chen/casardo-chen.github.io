@@ -1,11 +1,4 @@
 /* Register your custom font family and tell the browser where to find it. */
-@font-face {
-  font-family: 'MyriadPro';
-  src: url('/public/fonts/myriad-pro/MYRIADPRO-BOLD.OTF' ) format('opentype'),
-       url('/public/fonts/myriad-pro/MYRIADPRO-REGULAR.OTF') format('opentype');
-  font-style: normal;
-  font-display: swap;
-}
 
 @font-face {
     font-family: 'Calibri';
@@ -19,11 +12,6 @@ html, body {
     font-family: 'Calibri', 'Carlito', sans-serif;
   }
 
-.h1 {
-    font-family: 'Calibri', sans-serif !important;
-    font-weight: 400;
-    font-style: normal;
-}
 
 
 .time-line-container>div:last-child .education__time>.education__line {
@@ -36,7 +24,7 @@ html, body {
     font-style: normal;
   }
     
-  .dm-serif-display-regular-italic {
+.dm-serif-display-regular-italic {
     font-family: 'Calibri', 'Carlito', sans-serif;
     font-weight: 400;
     font-style: italic;
