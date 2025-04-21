@@ -3,7 +3,9 @@
 @font-face {
     font-family: 'Calibri';
     src: url('/public/fonts/calibri/calibri-regular.ttf') format('truetype'),
-         url('/public/fonts/calibri/calibri-bold.ttf') format('truetype');
+         url('/public/fonts/calibri/calibri-bold.ttf') format('truetype'),
+         url('/public/fonts/calibri/calibri-italic.ttf') format('truetype'),
+        url('/public/fonts/calibri/calibri-bold-italic.ttf') format('truetype');
     font-style: normal;
     font-display: swap;
   }
