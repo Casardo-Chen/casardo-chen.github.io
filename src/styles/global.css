@@ -1,13 +1,26 @@
 /* Register your custom font family and tell the browser where to find it. */
 @font-face {
   font-family: 'MyriadPro';
-  src: url('/fonts/myriad-pro/MYRIADPRO-BOLD.OTF') format('otf');
+  src: url('/public/fonts/myriad-pro/MYRIADPRO-BOLD.OTF' ) format('opentype'),
+       url('/public/fonts/myriad-pro/MYRIADPRO-REGULAR.OTF') format('opentype');
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+    font-family: 'Calibri';
+    src: url('/public/fonts/calibri/calibri-regular.ttf') format('truetype'),
+         url('/public/fonts/calibri/calibri-bold.ttf') format('truetype');
+    font-style: normal;
+    font-display: swap;
+  }
+
+html, body {
+    font-family: 'Calibri', 'Carlito', sans-serif;
+  }
+
 .h1 {
-    font-family: 'Myriad Pro', sans-serif !important;
+    font-family: 'Calibri', sans-serif !important;
     font-weight: 400;
     font-style: normal;
 }
@@ -18,13 +31,13 @@
 }
 
 .dm-serif-display-regular {
-    font-family: "DM Serif Display", serif;
-    font-weight: 1000 ;
+    font-family: 'Calibri', 'Carlito', sans-serif;
+    font-weight: 700;
     font-style: normal;
   }
-  
-.dm-serif-display-regular-italic {
-    font-family: "DM Serif Display", serif;
+    
+  .dm-serif-display-regular-italic {
+    font-family: 'Calibri', 'Carlito', sans-serif;
     font-weight: 400;
     font-style: italic;
   }
@@ -32,7 +45,7 @@
 
 .link {
     position: relative;
-    color: #233eb9;
+    color: #0000ee;
     text-decoration: underline;
     text-decoration-style: dotted;
 }
@@ -41,7 +54,7 @@
 .link:hover {
     background-position: 0 0;
     color: #ffffff;
-    background-color: #233eb9;
+    background-color: #0000ee;
     text-decoration: none;
     transition: background-color 0.4s ease;
 }
@@ -49,13 +62,13 @@
 .paper{
     position: relative;
     text-decoration: none;
-    color: #233eb9;
+    color: #0000ee;
 }
 
 .paper:hover {
     background-position: 0 0;
     color: #ffffff;
-    background-color: #233eb9;
+    background-color: #0000ee;
     text-decoration: none;
     transition: background-color 0.4s ease;
 }
@@ -68,7 +81,7 @@
 
 .number-list{
     font-weight: bold;
-    color: #233eb9;
+    color: #0000ee;
     margin-left: 12px;
     margin-right: 5px;
     text-indent: 0;
