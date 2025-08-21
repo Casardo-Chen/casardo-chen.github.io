@@ -39,8 +39,9 @@ const last_posts = posts.slice(0, 3);
     </div>
   </div>
 
-  <div>
-    <div class="text-2xl w-full font-bold mb-2" style="font-family: 'DM', sans-serif;">Featured Project</div>
+  <div class="flex flex-row items-center mb-5">
+    <div class="text-2xl font-bold" style="font-family: 'DM', sans-serif;">Featured Project</div>
+    <button onclick="window.location.href='/publications'" class="news-toggle-btn ml-3">All Projects</button>
   </div>
 
   <HorizontalCard
@@ -52,47 +53,73 @@ const last_posts = posts.slice(0, 3);
     tags={[["Project Page","https://luminate-research.github.io/"],["Video","https://www.youtube.com/watch?feature=shared&v=XMSGsq-COhI"],["Paper","https://arxiv.org/pdf/2310.12953.pdf"],]}
   />
 
-  <div>
-    <div class="text-2xl w-full font-bold mb-5 mt-10" style="font-family: 'DM', sans-serif;">News</div>
+  <div class="flex flex-row items-center mb-5 mt-10">
+    <div class="text-2xl font-bold" style="font-family: 'DM', sans-serif;">News</div>
+    <button id="toggle-news" class="news-toggle-btn ml-3">Show More +</button>
   </div>
   <ul id="news-list">
     <!-- <li><strong>Oct 26 - 29, 2025 </strong>
       <br> Presented <a class="paper" target="_blank" href="https://dl.acm.org/doi/full/10.1145/3663547.3746393">Surfacing Variations to Calibrate Perceived Reliability of MLLM-Generated Image Descriptions</a> in ASSETS 2025 @ Denver, CO, USA.
     </li> -->
-    <li><strong>Oct 13 - 16, 2024 </strong>
+    <li><strong class="news-time">Oct 13 - 16, 2024 </strong>
       <br> Served as a student volunteer for UIST 2024 @ Pittsburgh, PA, USA.
     </li>
-    <li><strong>May 12 - 16, 2024 </strong>
+    <li><strong class="news-time">May 12 - 16, 2024 </strong>
       <br> Attended CHI 2024 @ Honolulu, HI, USA. Hosted demo desk for <a class="paper" target="_blank" href="https://luminate-research.github.io/">Luminate</a>.
     </li>
-    <li><strong>Mar 14, 2024 </strong>
+    <li><strong class="news-time">Mar 14, 2024 </strong>
       <br> Our Paper <a class="paper" target="_blank" href="https://luminate-research.github.io/">Luminate: Structured Generation and Exploration of Design Space with Large Language Models for Human-AI Co-Creation</a> has been accepted to CHI 2024!
     </li>
-    <li class="extra-news" style="display: none;"><strong>Oct 29 - Nov 01, 2023 </strong>
+    <li class="extra-news" style="display: none;"><strong class="news-time">Oct 29 - Nov 01, 2023 </strong>
       <br> Attended UIST 2023 @ San Francisco, CA, USA.
     </li>
-    <li class="extra-news" style="display: none;"><strong>Jun 05, 2023 </strong>
+    <li class="extra-news" style="display: none;"><strong class="news-time">Jun 05, 2023 </strong>
       <br> Started my summer research internship at UCSD Design Lab.
     </li>
-    <li class="extra-news" style="display: none;"><strong>Feb 13 - 14, 2023 </strong>
+    <li class="extra-news" style="display: none;"><strong class="news-time">Feb 13 - 14, 2023 </strong>
       <br> Presented <a class="paper" target="_blank" href="https://kilthub.cmu.edu/articles/conference_contribution/An_Empirical_Study_of_Developer_Behaviors_for_Validating_and_Repairing_AI-Generated_Code/22223533">An Empirical Study of Developer Behaviors for Validating and Repairing AI-Generated Code</a> in PLATEAU workshop at CMU!
     </li>
   </ul>
-  <button id="toggle-news" class="mt-5">Show More <span>▼</span></button>
 
 <script>
   document.getElementById('toggle-news')?.addEventListener('click', function() {
-    const extraNews = document.querySelectorAll('.extra-news');
-    const button = this;
-    const isVisible = extraNews[0].style.display === 'none';
+    const extraNews = document.querySelectorAll('.extra-news') as NodeListOf<HTMLElement>;
+    const button = this as HTMLButtonElement;
+    const isVisible = extraNews[0]?.style.display === 'none';
 
     extraNews.forEach(item => {
       item.style.display = isVisible ? 'list-item' : 'none';
     });
 
-    button.innerHTML = isVisible ? 'Show Less ▲' : 'Show More ▼';
+    button.innerHTML = isVisible ? 'Show Less -' : 'Show More +';
   });
 </script>
+
+<style>
+  .news-toggle-btn {
+    background-color: #fff;
+    color: #000;
+    font-size: 1rem;
+    padding: 4px 8px 0px 8px;
+    border-radius: 2px;
+    cursor: pointer;
+    align-self: flex-end;
+  }
+  
+  .news-toggle-btn:hover {
+    background-color: #e5e5e5;
+  }
+  
+  .news-toggle-btn:active {
+    background-color: #000;
+    color: #fff;
+  }
+
+  .news-time {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+</style>
 
   <!-- {
     last_posts.map((post) => (

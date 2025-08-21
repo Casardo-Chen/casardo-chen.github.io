@@ -49,6 +49,10 @@ html, body {
     transition: background-color 0.4s ease;
 }
 
+.strong {
+    color: #0000ee;
+}
+
 .paper{
     position: relative;
     text-decoration: none;
