@@ -41,7 +41,9 @@ const last_posts = posts.slice(0, 3);
 
   <div class="flex flex-row items-center mb-5">
     <div class="text-2xl font-bold" style="font-family: 'DM', sans-serif;">Featured Project</div>
-    <button onclick="window.location.href='/publications'" class="news-toggle-btn ml-3">All Projects</button>
+    <button onclick="window.location.href='/publications'" class="news-toggle-btn ml-3">
+      [All Projects] 
+    </button>
   </div>
 
   <HorizontalCard
@@ -55,7 +57,7 @@ const last_posts = posts.slice(0, 3);
 
   <div class="flex flex-row items-center mb-5 mt-10">
     <div class="text-2xl font-bold" style="font-family: 'DM', sans-serif;">News</div>
-    <button id="toggle-news" class="news-toggle-btn ml-3">Show More +</button>
+    <button id="toggle-news" class="news-toggle-btn ml-3">[Show More +]</button>
   </div>
   <ul id="news-list">
     <!-- <li><strong>Oct 26 - 29, 2025 </strong>
@@ -91,7 +93,7 @@ const last_posts = posts.slice(0, 3);
       item.style.display = isVisible ? 'list-item' : 'none';
     });
 
-    button.innerHTML = isVisible ? 'Show Less -' : 'Show More +';
+    button.innerHTML = isVisible ? '[Show Less -]' : '[Show More +]';
   });
 </script>
 
@@ -100,7 +102,7 @@ const last_posts = posts.slice(0, 3);
     background-color: #fff;
     color: #000;
     font-size: 1rem;
-    padding: 4px 8px 0px 8px;
+    padding: 2px 4px 0px 4px;
     border-radius: 2px;
     cursor: pointer;
     align-self: flex-end;
