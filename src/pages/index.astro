@@ -3,6 +3,8 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import HorizontalCard from "../components/HorizontalCard.astro";
 import Tooltip from '../components/Tooltip.astro';
 import { getCollection } from "astro:content";
+import "../styles/misc.css";
+
 
 const posts = (await getCollection("blog")).sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
 
@@ -10,7 +12,8 @@ const last_posts = posts.slice(0, 3);
 ---
 
 <BaseLayout sideBarActiveItemID="home">
-  <div class="pb-12 mt-5">
+  <!-- <div class="pb-12 mt-5"> -->
+  <div class="mt-5">
     <div class="text-2xl py-3 font-bold" style="font-family: 'DM', sans-serif;">
       HCI + AI Researcher
     </div>
@@ -23,19 +26,38 @@ const last_posts = posts.slice(0, 3);
         <ul>
           <li> 
             <text class="text-lg">
-              <span class="number-list">1</span> We communicate through more than just text. What are other interaction techniques and modalities that can effectively align humans and/or LLMs in collaborative tasks?
-            </text>
+              <span class="number-list">Execution</span> Humans and LLMs now collaborate on complex tasks where user agency and personal goals define success (e.g., creativity, accessibility). How can we design interactions that complement their strengths rather than replace one another?
           </li>
           <li>
             <text class="text-lg">
-              <span class="number-list">2</span> Long-form LLM outputs are rarely perfect in the first try. Misalignments can be subtle; errors are hard to detect. How can users interactively show their preferences to LLMs, and what methods best support end-user evaluation? 
+              <span class="number-list">Evaluation</span> Long-form LLM outputs are rarely perfect on the first try. How can users express preferences and evaluate results when misalignments are subtle and errors are hard to detect?
             </text>
           </li>
         </ul>
         <br/>
       <text class="text-lg">
-        I am a CS PhD student at <a href="https://www.utexas.edu/" class="link" target="_blank"> The University of Texas at Austin</a> advised by <a href="https://amypavel.com/" class="link" target="_blank"> Amy Pavel</a>. I obtained my Bachelor's degree in Computer Science and Philosophy from the <a href="http://nd.edu" class="link" target="_blank">University of Notre Dame</a> where I worked closely with <a href="http://toby.li" class="link" target="_blank">Toby Jia-jun Li</a>.
+        I am a 2nd-year CS PhD student at <a href="https://www.utexas.edu/" class="link" target="_blank"> The University of Texas at Austin</a> advised by <a href="https://amypavel.com/" class="link" target="_blank"> Amy Pavel</a>. I obtained my Bachelor's degree in Computer Science and Philosophy from the <a href="http://nd.edu" class="link" target="_blank">University of Notre Dame</a> where I worked closely with <a href="http://toby.li" class="link" target="_blank">Toby Jia-jun Li</a>.
       </text>
+    </div>
+  </div>
+
+  <div class="pb-8 mt-5">
+    <div style="
+      margin-top:-20px;
+      padding: 20px; 
+      border-radius: 4px; 
+      background-color: #f4efb7; 
+      border: 0px solid #ccc;
+      margin-top: 20px;
+      text-align: left;
+    ">
+      <p >
+        I'm actively seeking research internship positions for <b>Summer 2026</b>, 
+        especially in Human-LLM (agent) Interaction.
+        You can check out my <a class="link" href="/publications">publications</a> or <a class="link" href="/Meng_CHEN_CV.pdf" target="_blank">CV</a> for more details.
+        <br/>
+        I'm always down to chat about potential opportunities or collaborations! Just send me an <a class="link" href="mailto:mengchen@utexas.edu">email</a>.
+      </p>
     </div>
   </div>
 
