@@ -35,7 +35,7 @@ html, body {
 
 .link {
     position: relative;
-    color: #0000ee;
+    color: #839dec;
     text-decoration: underline;
     text-decoration-style: dotted;
 }
@@ -44,25 +44,25 @@ html, body {
 .link:hover {
     background-position: 0 0;
     color: #ffffff;
-    background-color: #0000ee;
+    background-color: #839dec;
     text-decoration: none;
     transition: background-color 0.4s ease;
 }
 
 .strong {
-    color: #0000ee;
+    color: #839dec;
 }
 
 .paper{
     position: relative;
     text-decoration: none;
-    color: #0000ee;
+    color: #839dec;
 }
 
 .paper:hover {
     background-position: 0 0;
     color: #ffffff;
-    background-color: #0000ee;
+    background-color: #839dec;
     text-decoration: none;
     transition: background-color 0.4s ease;
 }
@@ -75,7 +75,7 @@ html, body {
 
 .number-list{
     font-weight: bold;
-    color: #0000ee;
+    color: #839dec;
     margin-left: 12px;
     margin-right: 5px;
     text-indent: 0;
