@@ -74,11 +74,24 @@ html, body {
 }
 
 .number-list{
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #3b60d9;
-    margin-left: 12px;
-    margin-right: 5px;
+    background-color: #f2f2f2;
+    padding: 0px 6px;
+    border-radius: 4px;
+    /* margin-left: 12px; */
+    /* margin-right: 5px; */
     text-indent: 0;
+}
+
+.tag{
+    /* font-weight: bold; */
+    font-size: 0.9rem;
+    background-color: #111;
+    color: #fff;
+    padding: 0px 6px;
+    border-radius: 4px;
+    width: fit-content;
 }
 
 span {
