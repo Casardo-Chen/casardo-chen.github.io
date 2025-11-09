@@ -1,13 +1,30 @@
 /* Register your custom font family and tell the browser where to find it. */
 
 html {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
 }
 
 html, body {
     font-family: 'Avenir', 'Avenir Next', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
+    color: #444;
+    min-height: 100vh;
+    background: linear-gradient(-45deg, #ffffff, #e0b0ff, #fff9c4, #c8a2c8, #ffffcc, #dda0dd);
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite;
   }
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 
 /* Make all bold text semi-bold, but only for Avenir font family */
 /* Exclude elements that explicitly use 'DM' font-family */
@@ -16,7 +33,6 @@ b:not([style*="font-family: 'DM'"]):not([style*='font-family: "DM"']),
 strong:not([style*="font-family: 'DM'"]):not([style*='font-family: "DM"']) {
     font-weight: 525 !important;
 }
-
 
 
 .time-line-container>div:last-child .education__time>.education__line {
@@ -39,10 +55,11 @@ strong:not([style*="font-family: 'DM'"]):not([style*='font-family: "DM"']) {
 .link {
     position: relative;
     color: #3b60d9;
-    text-decoration: underline;
-    text-decoration-style: dotted;
+    font-weight: 500;
+    /* text-decoration: underline;
+    text-decoration-style: dotted; */
+    text-decoration: none;
 }
-
 
 .link:hover {
     background-position: 0 0;
@@ -80,6 +97,7 @@ strong:not([style*="font-family: 'DM'"]):not([style*='font-family: "DM"']) {
     /* font-weight: bold; */
     color: #3b60d9;
     background-color: #f2f2f2;
+    font-weight: 500;
     padding: 0px 6px;
     border-radius: 4px;
     /* margin-left: 12px; */
@@ -90,7 +108,7 @@ strong:not([style*="font-family: 'DM'"]):not([style*='font-family: "DM"']) {
 .tag{
     /* font-weight: bold; */
     font-size: 0.85rem;
-    background-color: #111;
+    background-color: #444;
     color: #fff;
     padding: 0px 6px;
     border-radius: 4px;

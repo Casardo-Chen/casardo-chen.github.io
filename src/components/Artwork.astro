@@ -9,7 +9,9 @@ import { Image } from "@astrojs/image/components";
     <div class="card bg-base-100 transition ease-in-out mx-6 my-6">
       <Image aspectRatio="1:1" width={1200} format="webp" src={img} alt={title} />
       <div >
-        <p>{title}{badge && <div class="tag">{badge}</div>}</p>
+        <p>
+          {title}{badge && <div class="tag italic">{badge}</div>}
+        </p>
         <!-- <div class="card-actions justify-end">
           {tags && tags.map((tag) => <div class="number-list">{tag}</div>)}
         </div> -->

@@ -24,7 +24,7 @@ import './HorizontalCard.scss'
           )
       }
       <div class="grow w-full">
-        <h1 class="text-lg font-bold">
+        <h1 class="font-bold">
           {title}
           {badge && <div class="badge badge-secondary mx-2">{badge}</div>}
         </h1>
@@ -40,13 +40,14 @@ import './HorizontalCard.scss'
         </div>
  
           <div class="card-actions flex justify-between items-center">
-  {venue_short && <h1 class="text-l font-bold">{venue_short}</h1>}
-  <div class="flex py-1">
-    {tags && tags.map((tag) => (
-      <a href={`${tag[1]}`} target={target} class="horizontal-card-tag">
-          {tag[0]}
-      </a>
-    ))}
+            {venue_short && <p class="font-bold">{venue_short}</p>}
+          <div class="flex py-1">
+          {tags && tags.map((tag) => (
+            <a href={`${tag[1]}`} target={target} class="horizontal-card-tag">
+                {tag[0]}
+            </a>
+          ))}
+  </div>
   </div>
 </div>
 

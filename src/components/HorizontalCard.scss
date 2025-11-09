@@ -1,8 +1,6 @@
 .horizontal-card{
     .horizontal-card-tag{
         background-color: #fff;
-        color: #000;
-        font-size: 0.9rem;
         padding: 2px 8px;
         border-radius: 2px;
 
@@ -11,7 +9,13 @@
         background-color: #e5e5e5;
     }
     .horizontal-card-tag:active{
-        background-color: #000;
+        background-color: #444;
         color: #fff;
     }
+
+    // border: 1px solid #e5e5e5;
+    // border-radius: 10px;
+    // padding: 10px;
+    // margin: 10px;
+
 }

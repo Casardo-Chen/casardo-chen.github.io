@@ -86,9 +86,16 @@ const last_posts = posts.slice(0, 3);
 
   <div class="flex flex-row items-center mb-5 mt-10">
     <div class="text-2xl font-bold" style="font-family: 'DM', sans-serif;">News</div>
-    <button id="toggle-news" class="news-toggle-btn ml-3">[Show More +]</button>
-  </div>
+      <button id="toggle-news" class="news-toggle-btn ml-3">[Show More +]</button>
+    </div>
   <ul id="news-list">
+  <!-- style="
+    border: 1px solid #e5e5e5;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    "
+  -->
     <li><strong class="news-time">Oct 26 - 29, 2025 </strong>
       <br> Presented <a class="paper" target="_blank" href="https://dl.acm.org/doi/full/10.1145/3663547.3746393">Surfacing Variations to Calibrate Perceived Reliability of MLLM-Generated Image Descriptions</a> at ASSETS 2025 in Denver, CO, USA.
     </li>
@@ -136,7 +143,7 @@ const last_posts = posts.slice(0, 3);
   .news-toggle-btn {
     background-color: #fff;
     color: #000;
-    font-size: 0.9rem;
+    font-size: 1rem;
     padding: 2px 4px 0px 4px;
     border-radius: 2px;
     cursor: pointer;
@@ -148,7 +155,7 @@ const last_posts = posts.slice(0, 3);
   }
   
   .news-toggle-btn:active {
-    background-color: #000;
+    background-color: #444;
     color: #fff;
   }
 
