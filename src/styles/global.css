@@ -76,6 +76,7 @@ strong:not([style*="font-family: 'DM'"]):not([style*='font-family: "DM"']) {
 .paper{
     position: relative;
     text-decoration: none;
+    font-weight: 500;
     color: #3b60d9;
 }
 
@@ -83,6 +84,7 @@ strong:not([style*="font-family: 'DM'"]):not([style*='font-family: "DM"']) {
     background-position: 0 0;
     color: #ffffff;
     background-color: #3b60d9;
+    font-weight: 500;
     text-decoration: none;
     transition: background-color 0.4s ease;
 }
