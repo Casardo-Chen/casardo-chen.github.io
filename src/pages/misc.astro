@@ -6,18 +6,19 @@ import "../styles/misc.css";
 <BaseLayout title="Misc" sideBarActiveItemID="misc">
     <div class="contact-container">
         <div class="reach-out-statement">
-            <h1 class="text-2xl font-bold mb-5" style="font-family: 'DM', sans-serif;"> Wanna Chat?</h1>
+            <h1 class="text-2xl font-bold mb-5" style="font-family: 'DM', sans-serif;">Reach Out</h1>
             <p class="mb-5">
-                If you want to talk about <b>potential research collaboration</b> with Meng and/or you believe <b>you are related to Meng's research (content creators, blind or low-vision people, etc.)</b>, please don't hesitate to reach out via <a class="link" href="mailto:mengchen@utexas.edu">email</a>.
+                If you want to talk about <b>potential research collaboration</b> with Meng and/or you believe <b>you are related to Meng's research</b>, 
+                please don't hesitate to send me an <span id="email-address" class="email-copy" style="cursor: pointer;"><span id="email-text">email</span><span class="copy-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path></svg></span></span>.
             </p>
         </div>
         <div class="grid-container">
             <div class="location-info text-lg">
                 <h2 class="text-2xl font-bold mb-5" style="font-family: 'DM', sans-serif;">Office</h1>
-                <p class="mb-5">GDC 3.802B</p>
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1440.5871951304364!2d-97.73758861091042!3d30.286212976955518!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b59c98544379%3A0x1a0c2b90248ca2ed!2sGates%20Dell%20Complex%2C%202317%20Speedway%2C%20Austin%2C%20TX%2078712!5e0!3m2!1sen!2sus!4v1716595352417!5m2!1sen!2sus" 
+                <p class="mb-5">Berkeley Institute of Design (BiD) @ Hearst Memorial Mining Building</p>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6298.770659789332!2d-122.25962402400062!3d37.87467040639909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857c2382350445%3A0x993f5e7c89c947be!2sBerkeley%20Institute%20of%20Design!5e0!3m2!1sen!2sus!4v1768022878464!5m2!1sen!2sus" 
                         style="border:0; width: 100%; height: 300px;"
-                        allowfullscreen="" 
+                        allowfullscreen=""
                         loading="lazy" 
                         referrerpolicy="no-referrer-when-downgrade">
                 </iframe>
@@ -25,3 +26,92 @@ import "../styles/misc.css";
         </div>
     </div>
   </BaseLayout>
+
+<script>
+  const emailAddress = document.getElementById('email-address');
+  const emailText = document.getElementById('email-text');
+  const copyIcon = emailAddress?.querySelector('.copy-icon') as HTMLElement | null;
+  const email = 'meng.chen@berkeley.edu';
+  let timeoutId: ReturnType<typeof setTimeout> | null = null;
+
+  emailAddress?.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(email);
+      
+      // Store original content
+      const originalText = emailText?.textContent || '';
+      
+      // Clear any existing timeout
+      if (timeoutId !== null) {
+        clearTimeout(timeoutId);
+      }
+      
+      // Fade out, then change text and fade in
+      if (emailText) {
+        emailText.style.opacity = '0';
+        
+        setTimeout(() => {
+          if (emailText) {
+            emailText.textContent = 'copied!';
+            emailText.style.opacity = '1';
+          }
+          if (copyIcon) {
+            copyIcon.style.display = 'none';
+          }
+        }, 150); // Half of transition duration
+      }
+      
+      // Restore original content after 5 seconds with fade
+      timeoutId = setTimeout(() => {
+        if (emailText) {
+          emailText.style.opacity = '0';
+          
+          setTimeout(() => {
+            if (emailText) {
+              emailText.textContent = originalText;
+              emailText.style.opacity = '1';
+            }
+            if (copyIcon) {
+              copyIcon.style.display = 'inline-flex';
+            }
+            timeoutId = null;
+          }, 150);
+        }
+      }, 5000);
+    } catch (err) {
+      console.error('Failed to copy email:', err);
+    }
+  });
+</script>
+
+<style>
+  .email-copy {
+    /* font-weight: bold; */
+    color: #3b60d9;
+    background-color: #f2f2f2;
+    font-weight: 500;
+    padding: 0px 6px;
+    border-radius: 4px;
+    /* margin-left: 12px; */
+    /* margin-right: 5px; */
+    text-indent: 0;
+  }
+
+  #email-text {
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .copy-icon {
+    margin-left: 4px;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .copy-icon svg {
+    width: 14px;
+    height: 14px;
+  }
+</style>
