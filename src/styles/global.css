@@ -1,5 +1,9 @@
 /* Register your custom font family and tell the browser where to find it. */
 
+:root {
+    --bg-color: #f9f9f9;
+}
+
 html {
     font-size: 0.9rem;
 }
@@ -9,9 +13,9 @@ html, body {
     font-weight: 300;
     color: #444;
     min-height: 100vh;
-    background: linear-gradient(-45deg, #ffffff, #e0b0ff, #fff9c4, #c8a2c8, #ffffcc, #dda0dd);
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    background: var(--bg-color) !important;
+    background-size: auto !important;
+    animation: none !important;
   }
 
 @keyframes gradientShift {
