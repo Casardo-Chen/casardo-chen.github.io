@@ -1,5 +1,5 @@
 ---
-const { title, img, authors, url, badge, tags, desc, target = "_blank", venue, venue_short } = Astro.props;
+const { title, img, authors, url, badge, tags, award, target = "_blank", venue, venue_short } = Astro.props;
 import { Image } from "@astrojs/image/components";
 import './HorizontalCard.scss'
 ---
@@ -41,16 +41,20 @@ import './HorizontalCard.scss'
           >{venue}
         </div>
  
-          <div class="card-actions flex justify-between items-center">
-            {venue_short && <p class="font-bold">{venue_short}</p>}
-          <div class="flex py-1">
-          {tags && tags.map((tag) => (
-            <a href={`${tag[1]}`} target={target} class="horizontal-card-tag">
-                {tag[0]}
-            </a>
-          ))}
-  </div>
-  </div>
+          <div class="card-actions flex justify-between items-start">
+            <div class="flex flex-row items-start">
+              {venue_short && <p class="font-bold">{venue_short}</p>}
+              <span class="mx-2"> </span>
+              {award && <p class="font-bold text-orange-500">{award}</p>}
+            </div>
+            <div class="flex py-1">
+              {tags && tags.map((tag) => (
+                <a href={`${tag[1]}`} target={target} class="horizontal-card-tag">
+                  {tag[0]}
+                </a>
+              ))}
+            </div>
+          </div>
 </div>
 
       </div>
