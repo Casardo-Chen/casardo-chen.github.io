@@ -41,13 +41,12 @@ import './HorizontalCard.scss'
           >{venue}
         </div>
  
-          <div class="card-actions flex justify-between items-start">
-            <div class="flex flex-row items-start">
-              {venue_short && <p class="font-bold">{venue_short}</p>}
-              <span class="mx-2"> </span>
-              {award && <p class="font-bold text-orange-500">{award}</p>}
+          <div class="card-actions flex flex-row flex-nowrap justify-between items-center gap-4">
+            <div class="flex flex-row items-center shrink-0">
+              {venue_short && <span class="font-bold">{venue_short}</span>}
+              {award && <span class="font-bold text-orange-500 ml-2">{award}</span>}
             </div>
-            <div class="flex py-1">
+            <div class="flex flex-row items-center gap-2">
               {tags && tags.map((tag) => (
                 <a href={`${tag[1]}`} target={target} class="horizontal-card-tag">
                   {tag[0]}
