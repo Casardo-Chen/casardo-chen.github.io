@@ -6,15 +6,25 @@ import HorizontalCard from "../components/HorizontalCard.astro";
 <BaseLayout title = "Publications" sideBarActiveItemID="publications">
   <div class="text-2xl w-full font-bold mb-2"  style="font-family: 'DM', sans-serif;" >Publications</div>
   <p class="mb-2">* denotes equal contribution</p>
-  <div>
-    <div class="text-2xl w-full font-bold">Conference Proceedings</div>
+  <div class="flex flex-row items-center">
+    <div class="text-2xl font-bold leading-none">Conference Proceedings</div>
+    <button type="button" class="section-toggle-btn ml-3" aria-expanded="true" aria-controls="conference-proceedings" onclick="toggleSection('conference-proceedings', this)">[ - ]</button>
   </div>
+  <div id="conference-proceedings" class="section-content">
   <HorizontalCard
     title="DigitalCoach: Communication and Grounding Gaps in Human and Agentic Computer Use Coaching"
     img="/publications/DigitalCoach.png"
-    authors={["Meng Chen", "Anya Ji", "Tsung-Han Wu", "Tobias Maringgele", "David M. Chan", "Alane Suhr", "Amy Pavel"]}
+    authors={["Meng Chen", "Anya Ji", "Tsung-Han Wu", "Tobias Maringgele", "David M. Chan", "Alane Suhr*", "Amy Pavel*"]}
     venue_short="Arxiv Preprint"
     tags={[["Project Page","https://project-digital-coach.vercel.app/"],["Paper","https://arxiv.org/abs/2606.31980"],]}
+  />
+  <HorizontalCard
+    title="TaskArtisan: Designing Composable Generative Widgets for LLM-Assisted Analysis"
+    img="/publications/VLHCC2026-TaskArtisan.png"
+    authors={["Meng Chen", "Amy Pavel"]}
+    venue="Proceedings of the 2026 IEEE Symposium on Visual Languages and Human-Centric Computing"
+    venue_short="VL/HCC 2026"
+    tags={[["Paper",""],]}
   />
   <HorizontalCard
     title="Crepe: A Mobile Screen Data Collector Using Graph Query"
@@ -78,10 +88,13 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     tags={[["Video", "https://www.youtube.com/watch?v=8zCOj9G3I_o"], ["Paper","https://dl.acm.org/doi/10.1145/3533406.3533418"]
     ]}
   />
-
-  <div>
-    <div class="text-2xl w-full font-bold mt-2 mb-2">Extended Abstracts</div>
   </div>
+
+  <div class="flex flex-row items-center mt-2 mb-2">
+    <div class="text-2xl font-bold leading-none">Posters, Demos, and Workshops</div>
+    <button type="button" class="section-toggle-btn ml-3" aria-expanded="true" aria-controls="extended-abstracts" onclick="toggleSection('extended-abstracts', this)">[ - ]</button>
+  </div>
+  <div id="extended-abstracts" class="section-content">
   <HorizontalCard
     title="TaskArtisan: Flexible Authoring and Manipulation of Task-specific Interactive Widgets via Sketch and Voice"
     authors={["Meng Chen","Amy Pavel"]}
@@ -107,5 +120,45 @@ import HorizontalCard from "../components/HorizontalCard.astro";
     tags={[["Paper","https://kilthub.cmu.edu/articles/conference_contribution/An_Empirical_Study_of_Developer_Behaviors_for_Validating_and_Repairing_AI-Generated_Code/22223533"],
     ]}
   />
+  </div>
 
 </BaseLayout>
+
+<style>
+  .section-toggle-btn {
+    background-color: var(--bg-color);
+    color: #000;
+    font-size: 1rem;
+    padding: 0 4px;
+    border-radius: 2px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+    min-width: 2.25rem;
+    min-height: 2.25rem;
+  }
+
+  .section-toggle-btn:hover {
+    background-color: #e5e5e5;
+  }
+
+  .section-toggle-btn:active {
+    background-color: #444;
+    color: #fff;
+  }
+
+  .section-content.collapsed {
+    display: none;
+  }
+</style>
+
+<script is:inline>
+  function toggleSection(id, btn) {
+    const section = document.getElementById(id);
+    const collapsed = section.classList.toggle("collapsed");
+    btn.textContent = collapsed ? "[ + ]" : "[ - ]";
+    btn.setAttribute("aria-expanded", String(!collapsed));
+  }
+</script>
