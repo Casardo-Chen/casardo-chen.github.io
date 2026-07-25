@@ -43,7 +43,14 @@ import './HorizontalCard.scss'
  
           <div class="card-actions flex flex-row flex-nowrap justify-between items-center gap-4">
             <div class="flex flex-row items-center shrink-0">
-              {venue_short && <span class="font-bold">{venue_short}</span>}
+              {venue_short && (
+                <span>
+                  <span class="font-bold">{venue_short.split("|")[0].trim()}</span>
+                  {venue_short.includes("|") && (
+                    <span class="font-normal"> | {venue_short.split("|").slice(1).join("|").trim()}</span>
+                  )}
+                </span>
+              )}
               {award && <span class="font-bold text-orange-500 ml-2">{award}</span>}
             </div>
             <div class="flex flex-row items-center gap-2">
