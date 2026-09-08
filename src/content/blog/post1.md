@@ -1,8 +1,9 @@
 ---
 title: "Men's Work or Women's Work? How Engineering Brought Masculinity to Programming"
-description: "Meng Chen"
+description: "How programming shifted from feminized clerical labor to a masculine engineering profession."
 pubDate: "Apr 30 2023"
 heroImage: "/blog/women-programmer.png"
+draft: true
 ---
 
 ## Introduction

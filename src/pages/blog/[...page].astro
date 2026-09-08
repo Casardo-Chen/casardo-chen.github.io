@@ -3,9 +3,13 @@ import BaseLayout from "../../layouts/BaseLayout.astro";
 import HorizontalCard from "../../components/HorizontalCard.astro";
 import { getCollection } from "astro:content";
 import Artwork from "../../components/Artwork.astro";
+import dayjs from "dayjs";
+import localizedFormat from "dayjs/plugin/localizedFormat";
+
+dayjs.extend(localizedFormat);
 
 export async function getStaticPaths({ paginate }) {
-  const posts = await getCollection("blog");
+  const posts = await getCollection("blog", ({ data }) => !data.draft);
   posts.sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf());
   return paginate(posts, { pageSize: 10 });
 }
@@ -13,9 +17,9 @@ export async function getStaticPaths({ paginate }) {
 const { page } = Astro.props;
 ---
 
-<BaseLayout title="Art" sideBarActiveItemID="Arts">
+<BaseLayout title="Blogs" sideBarActiveItemID="blog">
   <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Essays</div>
+    <div class="text-3xl w-full font-bold">Blogs</div>
     <br />
     <p>
       I found it fascinating to write about some thoughts and observations on
@@ -40,6 +44,7 @@ const { page } = Astro.props;
               title={post.data.title}
               img={post.data.heroImage}
               desc={post.data.description}
+              date={dayjs(post.data.pubDate).format("ll")}
               url={"/blog/" + post.slug}
               target="_self"
               badge={post.data.badge}

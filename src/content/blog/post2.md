@@ -3,6 +3,7 @@ title: "Megacorporations in Cyberpunk Texts as an Angle to Examine Capitalism "
 description: "A Comparative Study of Ready Player One and The Red String Club"
 pubDate: "Dec 09 2021"
 heroImage: "/blog/red-string-club.webp"
+draft: true
 ---
 
 ##	Introduction
