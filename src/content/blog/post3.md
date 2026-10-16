@@ -57,6 +57,8 @@ The problem is that not every activity should be evaluated by whether the task g
 
 ## Three New Roles for AI in Authentic Engagement
 
+But if the experience itself matters, why involve AI at all? Why not simply put the machine away? I don't think authentic engagement means doing everything alone. Throughout history, we have relied on collaborators who can help us do things we could not otherwise do. AI could play a similar role, making meaningful participation more accessible. 
+
 Here are three capacities that I suspect will become increasingly important as execution itself becomes cheaper: forming goals, developing judgment, and cultivating capabilities.
 
 ### 1. AI as a Thought Partner: Helping Us Figure Out What to Want
@@ -139,7 +141,7 @@ I think we sometimes forget that life is not merely a sequence of problems to so
 
 A magic machine could give us extraordinary freedom from the things we have to do. What remains is figuring out what we want to do with that freedom.
 
-After all, we want AI to save time. But how should we kill time then?
+After all, we built AI to save us time. But if life is ultimately about how we spend it, what are we saving all this time for? And should AI help us live those moments, or just step aside? 
 
 ---
 
@@ -160,4 +162,4 @@ After all, we want AI to save time. But how should we kill time then?
 7. _[On the Conversational Persuasiveness of GPT-4](https://doi.org/10.1038/s41562-025-02194-6)_[.](https://doi.org/10.1038/s41562-025-02194-6) (2025). _Nature Human Behaviour_.
     
 
-_Acknowledgments: Thanks to GPT for feedback and polish on earlier drafts of this post. Thank Tom Zhang and Jeffrey Zhang for the feedback on the initial draft of the blog._
+_Acknowledgments: Thanks to GPT for feedback and polish on earlier drafts of this post. Thanks to Tom Zhang and Jeffrey Zhang for the feedback on the initial draft of the post._
