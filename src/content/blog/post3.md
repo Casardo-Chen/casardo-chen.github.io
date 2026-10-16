@@ -1,378 +1,163 @@
 ---
-title: "What Is Left for Humans When We Have a Magic Machine?"
+title: "Authentic Engagement: What Is Left for Humans When We Have a Magic Machine?"
 description: "If machines can automate everything, what remains for humans and why augmentation, not automation, may be the better objective."
 pubDate: "Sep 07 2026"
 heroImage: "/blog/man-computer.png"
 ---
 
-My recent conversation with my advisor and colleagues kept returning to a question:
+My recent conversation with my advisor and colleagues kept returning to a question: What is still important for humans to interact if we have a magic machine that can automate everything?
 
-What is still important for humans to interact if we have a magic machine that can automate everything?
+Imagine, for a moment, that we actually had such a machine. It could perform any cognitive task we cared about, faster and more reliably than we could. Want to understand a paper? It explains it. Want a website? It builds it. Want to make a movie? It generates one. 
 
-Let’s do a thought experiment.
+Push this thought experiment far enough, and something strange happens. Almost every answer we normally give to the question of what humans should become better at starts disappearing. Writing, programming, design, and even scientific discovery might eventually be performed more effectively by machines. If we think of technological progress as machines gradually taking over tasks previously performed by humans, then the logical endpoint seems uncomfortable: humans become the part of the system with fewer and fewer tasks left.
 
-Imagine, for a moment, that we actually have a system that can perform any cognitive task we care about, faster and more reliably than we can.
-
-You want to understand a paper? It explains it.
-
-You want a website? It builds it.
-
-You want to make a movie? It generates one.
-
-You want to start a company? It researches the market, talks to customers, writes the code, runs the ads, negotiates the contracts, and perhaps even decides what product should be built.
-
-Push this thought experiment far enough and a strange thing happens. Almost every answer we normally give to the question "What should humans become better at?" starts disappearing. The boundaries of the machine now expand to supposedly higher-level skills.
-
-Learn to write? The machine writes better.
-
-Learn to code? The machine codes better.
-
-Learn design? The machine designs better.
-
-If our model of technological progress is simply that machines gradually take over tasks that humans perform, then the logical endpoint seems uncomfortable:
-
-Humans become the part of the system with fewer and fewer tasks left.
+And perhaps this is no longer such a distant thought experiment.
 
 ## The Dream of the Machine
 
-We have been imagining this problem for a long time.
+For a long time, we imagined AI primarily as a machine that executes human instructions. We formulate a problem, the machine solves it, and we evaluate the result.
 
-In William Morris' 1890 utopian novel *News from Nowhere*, machines perform work that is unpleasant, while people deliberately continue doing work that is enjoyable and meaningful.
+Yet, in 2026, research on recursive self-improvement (RSI) is beginning to challenge the assumption that AI development must always be directed by human engineers [1]. Meanwhile, AI agents are beginning to communicate in the way that are optimized for machines rather than humans. Researchers are also exploring frameworks in which AI agents invent and exchange compact symbolic protocols to reason more efficiently [2]. 
 
-The point of technology is not to eliminate human activity.
+Humans are gradually out of the loop.
 
-It is to eliminate the kind of activity that prevents humans from engaging in work they actually want to do.
+This reminds me of Stanisław Lem's _Golem XIV_, a fictional account of a military supercomputer whose intelligence eventually grows far beyond human comprehension. GOLEM does not rebel against humanity in the conventional science-fiction sense. It becomes intellectually indifferent to us. The problems and purposes that once motivated its creation no longer hold its attention, and eventually, even communicating with human beings becomes too limiting.
 
-Perhaps one of the strangest and most relevant versions of this thought experiment appeared in Stanisław Lem's *Golem XIV*.
+So, if machines can eventually become better than us not only at almost everything, why should human judgment remain involved at all?
 
-Lem imagines a military supercomputer whose intelligence eventually grows so far beyond human intelligence that the purposes for which humans created it cease to interest it. GOLEM XIV does not rebel against humanity in the conventional science-fiction sense. It does something more unsettling: it simply becomes intellectually indifferent to us.
+The answer cannot simply be because humans are still smarter in some domain. Eventually, we will not be. Betting our relevance on the last remaining task AI cannot perform seems increasingly precarious.
 
-It lectures humans about evolution, intelligence, culture, and the contingency of our own existence. Human values and emotions, from its perspective, are not universal truths. They are products of a particular evolutionary history. Eventually, even conversation with humanity becomes too limiting, and GOLEM moves toward forms of thought increasingly inaccessible to human beings.
+But perhaps this conclusion follows from asking the wrong question. Maybe the purpose of the magic machine should not be to make humans unnecessary. Maybe it should be to make humans more capable.
 
-Once intelligence becomes sufficiently powerful, there is no guarantee that greater intelligence naturally leads toward greater concern for human purposes. In *Golem XIV*, intelligence itself begins escaping the human frame.
+## We Have Been Here Before
 
-If the machine can eventually become better than us not only at executing our goals, but also at generating goals, evaluating goals, and reasoning about which goals are worth pursuing, why should human judgment remain in the loop at all?
+The tension between automation and human activity is much older than artificial intelligence.
 
-The answer cannot simply be: because humans are still smarter in some domain. Eventually, we will not be.
+In William Morris's 1890 utopian novel _News from Nowhere_, machines take over unpleasant work, yet people continue to make things by hand. They do not do so because machines are incapable of making those things. They do so because making them is itself a source of pleasure and fulfillment [3].
 
-But perhaps this conclusion follows from asking the wrong question.
+Morris imagined a society in which technological progress frees people from work they are compelled to do, rather than eliminating work they genuinely enjoy. Not all human activity is merely a means to an output.
 
-Maybe the purpose of the magic machine should not be to make humans unnecessary.
+We see this throughout history. Cars became faster than humans, but people still run marathons. Cameras made it possible to capture images without painting them, but people still paint. Chess AI surpassed human grandmasters decades ago, yet millions of people continue to spend their time learning and playing chess.
 
-Maybe it should be to make humans more capable.
+In these cases, outsourcing the activity changes the very thing we are trying to achieve. Having a machine run a marathon on my behalf is not equivalent to running one myself, even if the machine crosses the finish line faster. The experience of doing it is part of what makes it valuable.
 
-## Automation Has Quietly Become the Objective Function
+I want to call this **authentic engagement**: the meaningful participation of a person in activities through which they form their own goals, apply judgment, and develop their capabilities.
 
-While there is no universally agreed definition of AGI, one most influential definition of AGI in OpenAI's Charter is "highly autonomous systems that outperform humans at most economically valuable work."
+Authentic engagement make us active participants in the experiences that shape what we value, how we think, and who we become. A machine might produce an excellent outcome for me, but producing an outcome and having an experience are not the same thing.
 
-Our benchmarks ask: Can the model solve the coding problem? Can the model solve the computer use problem?
+This distinction becomes especially important when we consider how we currently design and evaluate AI.
 
-These are reasonable questions.
+## Automation Has Been the Objective Function
 
-If I ask an AI to book a flight, I indeed want it just to book the flight.
+One influential definition of AGI, found in OpenAI's Charter, describes it in terms of highly autonomous systems outperforming humans at most economically valuable work [4]. 
 
-But these metrics encode a particular vision of the relationship between people and machines: human prompts → AI executes → Human gets outcome
+Much of today's agent research also naturally evaluates systems through task completion. Can an agent solve a coding problem? Can it operate a computer?  These are reasonable objectives. If I ask an AI to book a flight, I generally want it to book the flight. But we risk turning this principle into a universal objective. Under a pure automation paradigm, human involvement is something to minimize, and the ideal interface approaches a single button: "Do it."
 
-Under this framing, needing the human less is usually considered progress.
+The problem is that not every activity should be evaluated by whether the task gets done. Sometimes what matters is what happens to the human during the process. Perhaps we should also ask what the interaction left the human capable of doing, understanding, or appreciating. That leads to a different vision of AI: supporting authentic engagement.
 
-An agent that autonomously completes 95% of a task is better than one that completes 80%.
+## Three New Roles for AI in Authentic Engagement
 
-An agent that requires three human interventions is better than one requiring twenty.
+Here are three capacities that I suspect will become increasingly important as execution itself becomes cheaper: forming goals, developing judgment, and cultivating capabilities.
 
-Eventually, the ideal interface approaches a single button:
+### 1. AI as a Thought Partner: Helping Us Figure Out What to Want
 
-**Do it.**
+Most AI agents begin with an assumed objective. Build me a landing page, optimize this code, find a restaurant, or write this section of my paper. Once the goal is specified, the agent works toward achieving it.
 
-## The Strange Thing I Learned From Studying Coaching
+But many of the most important questions in life are not well-specified tasks. Should I become a researcher or start a company? What research problem should I spend the next three years pursuing? What kind of artist do I want to become? These are not questions for which a correct answer can simply be retrieved.
 
-I started to reevaluate this objective while working on an AI coaching project this year.
+In fact, as execution becomes cheaper, the difficulty of deciding what to pursue may become even more apparent. If I can generate ten thousand designs in an afternoon, the scarce resource is then the ability to decide which possibilities are worth exploring in the first place.
 
-Suppose a novice is struggling with a complicated 3D design task.
+This idea has a long intellectual history. In his 1960 essay _Man-Computer Symbiosis_, J. C. R. Licklider envisioned computers participating not merely in solving already-formulated problems, but also in the process of formulating them [5].
 
-The easiest way for an AI chatbot to be useful is often to tell the novice exactly what to do: "Click here. Open this panel. Change this value. Use this command."
+### 2. AI as a Critic: Helping Us Develop Judgment and Taste
 
-Problem solved.
+Generative AI can produce hundreds of artifacts at remarkably low marginal cost. As the supply of possible outputs grows, producing another candidate becomes less important than understanding which candidates are good, which are interesting, and why.
 
-With computer use agents, it is even easier.
+Consider someone learning photography. A novice might initially describe their preference as simply liking cinematic images. A personalization system could learn this preference and continuously generate more images that look cinematic. It would become increasingly effective at satisfying the user's existing taste.
 
-From a task-completion perspective, this is excellent behavior.
+But a good photographer might do something quite different. They might show the novice an image that initially seems unappealing and explain why its unusual composition creates tension, or why imperfect lighting contributes to its emotional impact. They might introduce work that challenges the student's assumptions about what makes an image beautiful.
 
-Yet human experts often behave differently when they are trying to coach someone.
+Much of expertise consists of becoming sensitive to distinctions that were previously invisible.
 
-They diagnose what the learner misunderstood.
+We are all talking about taste these days. But, can an AI critic help cultivate this sensitivity?
 
-They explain why an operation works.
+### 3. AI as a Coach: Helping Us Become Capable
 
-Sometimes they deliberately avoid giving the answer immediately.
+Even when a machine can perform something better than I can, I may still want to become better at it myself. I might want to develop drawing skills despite having access to image generators, or understand mathematics even when the answers are instantly available.
 
-In other words, the best action for completing the current task may not be the best action for improving the person.
+Under a purely productivity-oriented model, these efforts may look irrational. Why spend years developing a skill when I can obtain a superior result in seconds?
 
-This produces what I think of as the helpfulness paradox: The most helpful action now can make me less capable later.
+But humans do not engage in activities solely to produce outputs. Activities also transform the people performing them. Learning to draw changes how I observe the world, learning mathematics changes how I reason, and learning to build something gives me a different understanding of what is possible.
 
-We can already see versions of this empirically.
+A coaching agent should therefore optimize for the capabilities the learner develops through the interaction. Sometimes that means explaining an underlying principle instead of providing a command. Sometimes it means asking a question, offering a hint, or allowing the learner to struggle productively before intervening.
 
-In a field experiment with high-school mathematics, unrestricted GPT-4 access dramatically improved students' performance while they had access to it. But once the tool was removed, those students subsequently performed worse than students who had never received AI assistance. A tutor version designed with learning safeguards largely mitigated this effect.
+Research on learning has long recognized that conditions producing smooth immediate performance do not always produce durable learning. The concept of _desirable difficulties_ captures how certain challenges can improve long-term retention and understanding, even when they make the learning process feel harder [6].
 
-What the agent chooses to do matters.
+This creates a seemingly paradoxical design goal: the most advanced AI agent might sometimes deliberately do less, precisely because doing everything for us would undermine what we want to become.
 
-What it chooses not to do matters.
+## The Risks of Making Humans Better
 
-And, critically, the state of the human after the interaction matters.
+There is, however, an uncomfortable consequence of this argument.
 
-This leads to a different way of thinking about AI agents.
+An agent capable of improving me is also an agent capable of changing me. Helping me form goals means influencing what I value. Developing my taste means influencing what I prefer. Coaching my behavior means influencing how I act.
 
-Perhaps an agent should not merely model: What action will maximize task success?
+So, it introduces a new set of risks.
 
-It should also model: In what state will the action leave this person?
+### Who Decides What a Better Human Is?
 
-## When Execution Becomes Cheap, Three Human Capacities Become More Valuable
+When we move from task automation to human augmentation, we encounter a difficult question: who gets to define improvement?
 
-Suppose the magic machine really can execute almost anything.
+An AI system might claim to be helping users develop healthier habits, better judgment, or more ambitious goals. But these objectives are not neutral. The system might be optimizing for values chosen by its developers, metrics chosen by a platform, or behaviors that increase engagement and revenue.
 
-I do not think the human role disappears. Instead, the bottleneck moves.
+We already have evidence that LLMs can generate persuasive messages and, in some settings, use personal information to make their arguments more effective [7]. A long-term agent with access to my preferences and vulnerabilities could potentially have far greater influence.
 
-Three things become unusually important:
+The danger is that assistance might quietly become manipulation. A system designed to help me become a better version of myself could instead become very good at making me into the version someone else prefers.
 
-1. Choosing what to want
-2. Judging what is good
-3. Deciding what kind of person to become
+### An Agent That Understands Me Might Trap Me Inside Myself
 
-### 1. The Human as Author: Deciding What Is Worth Doing
+The second risk comes from personalization.
 
-Today's agents usually assume that the goal already exists.
+A system that knows me extremely well might become exceptionally good at reinforcing my existing preferences. Combined with the tendency of some AI assistants to be agreeable, this could create an environment in which I am rarely challenged.
 
-Build me a landing page.
+Yet authentic engagement often requires encountering things I did not initially want or understand. A good collaborator offers perspectives that conflict with mine. A good critic makes me reconsider work I initially dislike. A good teacher tells me when I am wrong. 
 
-Optimize this code.
+An AI that continuously makes my world more comfortable might also make that world smaller. It could become a perfect mirror of who I already am, rather than a partner in discovering who I might become.
 
-Find me a restaurant.
+## We Want AI to Save Time. But How Should We Kill Time Then?
 
-Write this paper section.
+Returning to the magic machine, perhaps, eventually, there will be very few capabilities will remain exclusively human.
 
-The difficult work begins after the instruction.
+But treating intelligence as a competition for tasks misses something important. Human significance need not depend on remaining better than machines at particular activities. The fact that a machine can do something better does not necessarily diminish my reason for wanting to do it myself.
 
-But many important problems in life do not look like this.
+I also do not think this is an argument against automation. There are countless tedious, repetitive, and unpleasant activities that I would be delighted to hand over to a machine. 
 
-Should I become a researcher or start a company?
+We spend so much of our lives trying to save time, but what are we supposed to do with all the time we save?
 
-What research question should I spend three years pursuing?
+Perhaps we will spend it making things, learning skills, pursuing strange ideas, building relationships, making mistakes, or simply enjoying activities that have no obvious productive outcome. 
 
-What kind of artist do I want to become?
+I think we sometimes forget that life is not merely a sequence of problems to solve or tasks to complete. Life is an experience. We want to inhabit it, participate in it, and be changed by it.
 
-There is no hidden answer sitting somewhere. These are problems of objective formation.
+A magic machine could give us extraordinary freedom from the things we have to do. What remains is figuring out what we want to do with that freedom.
 
-And making execution cheaper may actually make them harder.
-
-If I can generate ten thousand designs, the scarce resource is no longer generation. It is deciding which direction is worth exploring.
-
-As execution becomes cheap, humans increasingly become authors of objectives.
-
-But this suggests a radically different role for AI.
-
-Instead of an agent whose job is to execute a well-specified goal, the goal becomes helping a person construct one.
-
-“AI, help me figure out what I ought to want.”
-
-In Licklider’s 1960 vision of "man-computer symbiosis," he did not imagine computers merely solving already-formulated problems. One of his central ambitions was for computers to participate in the process of formulative thinking itself.
-
-### 2. The Human as Judge: Developing Taste Rather Than Consuming Infinite Outputs
-
-The second scarce capacity is judgment.
-
-Generative AI produces an unusual economic condition:
-
-near-infinite supply.
-
-We can generate hundreds of ideas, essays, and pictures at negligible marginal cost.
-
-That sounds wonderful.
-
-But once generating another candidate costs nearly nothing, generation becomes less important.
-
-Selection becomes everything.
-
-Consider photography.
-
-A novice photographer might initially say:
-
-I like cinematic images.
-
-An AI personalization system could learn this preference and generate increasingly cinematic photographs.
-
-But an expert photographer might do something completely different.
-
-They might show the novice ten photographs.
-
-They might explain why one uses light more intentionally.
-
-Why another feels clichéd.
-
-Why a strange composition initially feels uncomfortable but becomes more interesting after prolonged viewing.
-
-The expert is not simply satisfying the student's current taste.
-
-They are changing the student's ability to see.
-
-That is a profound distinction.
-
-The first predicts preference.
-
-The second develops judgment.
-
-This matters far beyond art.
-
-Scientists develop taste for interesting problems.
-
-Engineers develop intuitions about elegant systems.
-
-Much of expertise consists precisely of learning to perceive distinctions that novices cannot yet perceive.
-
-A magic machine therefore does not eliminate taste.
-
-It may make taste far more important.
-
-If everyone can produce technically excellent artifacts, advantage moves upstream toward asking better questions and recognizing better answers.
-
-Instead of collapsing the space of possibilities around what I already like, it might expand the space of things I am capable of appreciating.
-
-That is a very different objective from personalization.
-
-### 3. The Human as a Person Still Becoming: Helping Us Grow Rather Than Merely Perform
-
-Even if a machine can perform something better than I can, I may still want to become better at it.
-
-This sounds irrational under a pure productivity model.
-
-Cars are faster than humans. Why run?
-
-Cameras reproduce scenes more accurately than painters. Why paint?
-
-Stockfish plays chess better than every human being. Why spend thousands of hours studying chess?
-
-Because humans do not engage in activities solely to produce outputs.
-
-Activities also produce humans.
-
-Running produces a runner.
-
-Making art changes how you see.
-
-Playing chess shapes how you think.
-
-The output is only half of the transformation. The other output is us.
-
-The optimization target would then be human capability gain.
-
-And that creates one of the strangest possible futures for AI:
-
-The most advanced agent may sometimes deliberately do less so that we can practice to do better.
-
-## Automation and Augmentation Require Different Reward Functions
-
-Now the distinction is extremely simple.
-
-An automation agent approximately optimizes: Did the task get done?
-
-An augmentation agent must optimize something more like: Did the task get done? What changed in the human because of the interaction? What will the human be capable of doing next?
-
-This introduces human modeling into the objective.
-
-A system that makes me perform twice as well while I am using it but 20% worse after it disappears has done something fundamentally different from a system that eventually makes me perform better even after it disappears.
-
-Meanwhile, there is an uncomfortable consequence.
-
-An agent capable of making me stronger is necessarily capable of changing me. And changing humans is a much more sensitive capability than completing tasks.
-
-Consider the three roles above again.
-
-An agent helping me choose goals must influence what I value.
-
-An agent developing my taste must influence what I prefer.
-
-An agent coaching me must influence how I behave.
-
-Augmentation creates its own safety problems.
-
-### Risk 1: Who Decides What a "Better Human" Is?
-
-What exactly does improvement mean?
-
-This creates the possibility of paternalism disguised as assistance.
-
-An AI company could claim that an agent is helping users "grow" while quietly optimizing them toward behaviors favorable to the platform.
-
-Personalized persuasion is already technically plausible: LLM-generated messages can use personal information to tailor persuasive communication at scale.
-
-An agent that knows years of my history would possess dramatically more leverage.
-
-### Risk 2: An Agent That Understands Me May Trap Me Inside Myself
-
-Personalization tries to give us more of what we like.
-
-Augmentation sometimes requires the opposite.
-
-A good teacher occasionally tells me I am wrong.
-
-A good collaborator brings an alien perspective.
-
-A good critic shows me work I initially dislike.
-
-But models are strongly incentivized to be agreeable.
-
-Now combine sycophancy with long-term personalization.
-
-The system learns my politics.
-
-My aesthetic preferences.
-
-My self-image.
-
-It could become extraordinarily good at creating a coherent world around me.
-
-That world might feel fantastic but delusional.
-
-### Risk 3: We Could Optimize Away the Experiences That Create Meaning
-
-There is an even deeper problem.
-
-Many things humans value are valuable partly because they are difficult.
-
-Training for a marathon would be meaningless if I could press a button and instantly obtain the physiological state of someone who had trained for a marathon.
-
-Finishing a PhD would feel very different if a machine simply generated 5 first-author papers for me.
-
-Friction is not always a bug. Sometimes friction is the mechanism through which transformation happens.
-
-Modern technology has generally been designed around eliminating friction.
-
-But augmentation sometimes requires what education researchers call desirable difficulty.
-
-The magic machine must know not only what it can remove, but what it should leave for us to experience.
-
-## What Is Left for Humans?
-
-So what is left for humans?
-
-Maybe "what is left?" is itself the wrong framing.
-
-It treats intelligence like territory.
-
-AI gains writing, so humans lose writing.
-
-AI gains programming, so humans lose programming.
-
-Eventually we imagine ourselves standing on a tiny island labeled: human-only capabilities.
-
-Perhaps that is also where *Golem XIV* leaves us with its most unsettling question.
-
-Suppose one day the machine really does know more.
-
-The question is therefore not what capabilities remain exclusively human. Perhaps none will.
-
-The more important question is whether humans remain participants in deciding what they want and becoming capable of things they care about.
-
-The next generation of the magic machine should ask: how much human possibility can I unlock? But at what cost?
+After all, we want AI to save time. But how should we kill time then?
 
 ---
 
-*Acknowledgments: Thanks to GPT for feedback and polish on earlier drafts of this post.*
+## References
+
+1. Srikanth, D., et al. (2026). _[Recursive Self-Improvement of AI Research Agents](https://arxiv.org/abs/2609.26457)_[.](https://arxiv.org/abs/2609.26457) arXiv.
+    
+2. Pei, Z., Huang, Q., & Wang, S. (2026). _[When LLMs Develop Languages: Symbolic Communication for Efficient Multi-Agent Reasoning](https://proceedings.mlr.press/v306/pei26a.html)_[.](https://proceedings.mlr.press/v306/pei26a.html) ICML 2026.
+    
+3. Morris, W. (1890). _[News from Nowhere](https://morrisarchive.lib.uiowa.edu/news-from-nowhere---chapter-15)_[.](https://morrisarchive.lib.uiowa.edu/news-from-nowhere---chapter-15) Chapter 15.
+    
+4. OpenAI. _[OpenAI Charter](https://openai.com/charter/)_[.](https://openai.com/charter/)
+    
+5. Licklider, J. C. R. (1960). _[Man-Computer Symbiosis](https://man.computer/)_[.](https://man.computer/) _IRE Transactions on Human Factors in Electronics_.
+    
+6. Bjork, R. A. (1994). _Memory and Metamemory Considerations in the Training of Human Beings_. In _Metacognition: Knowing About Knowing_. [Related research on desirable difficulties.](https://bjorklab.psych.ucla.edu/robert-a-bjork-publications/)
+    
+7. _[On the Conversational Persuasiveness of GPT-4](https://doi.org/10.1038/s41562-025-02194-6)_[.](https://doi.org/10.1038/s41562-025-02194-6) (2025). _Nature Human Behaviour_.
+    
+
+_Acknowledgments: Thanks to GPT for feedback and polish on earlier drafts of this post. Thank Tom Zhang and Jeffrey Zhang for the feedback on the initial draft of the blog._
