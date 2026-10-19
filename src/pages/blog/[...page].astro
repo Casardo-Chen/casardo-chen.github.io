@@ -18,9 +18,8 @@ const { page } = Astro.props;
 ---
 
 <BaseLayout title="Blogs" sideBarActiveItemID="blog">
-  <div class="mb-5">
-    <div class="text-3xl w-full font-bold">Blogs</div>
-    <br />
+  <div class="text-lg mb-5">
+    <div class="text-2xl w-full font-bold mb-5" style="font-family: 'DM', sans-serif;">Blogs</div>
     <p>
       I found it fascinating to write about some thoughts and observations on
       Science, Technology, and Society. I hope you enjoy reading them as much as
@@ -39,19 +38,16 @@ const { page } = Astro.props;
     ) : (
       <ul>
         {page.data.map((post) => (
-          <>
-            <HorizontalCard
-              title={post.data.title}
-              img={post.data.heroImage}
-              desc={post.data.description}
-              date={dayjs(post.data.pubDate).format("ll")}
-              url={"/blog/" + post.slug}
-              target="_self"
-              badge={post.data.badge}
-              click={true}
-            />
-            <div class="divider my-0" />
-          </>
+          <HorizontalCard
+            title={post.data.title}
+            img={post.data.heroImage}
+            desc={post.data.description}
+            date={dayjs(post.data.pubDate).format("ll")}
+            url={"/blog/" + post.slug}
+            target="_self"
+            badge={post.data.badge}
+            click={true}
+          />
         ))}
       </ul>
     )
